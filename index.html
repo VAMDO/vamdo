@@ -48,15 +48,15 @@
             color: white;
         }
         .form-section h2 { color: #ccff00; font-size: 1.5rem; margin-top: 0; text-transform: uppercase; text-align: center; }
-        label { display: block; margin-top: 10px; font-size: 0.9rem; font-weight: bold; }
+        label { display: block; margin-top: 10px; font-size: 0.8rem; font-weight: bold; color: #ccff00; }
         input, textarea {
             width: 100%;
-            padding: 10px;
-            margin: 5px 0 15px 0;
+            padding: 12px;
+            margin: 5px 0 10px 0;
             background: #222;
             border: 1px solid #444;
             color: white;
-            border-radius: 5px;
+            border-radius: 8px;
             box-sizing: border-box;
         }
         .submit-btn {
@@ -69,9 +69,9 @@
             font-weight: bold;
             cursor: pointer;
             text-transform: uppercase;
-            transition: 0.3s;
+            margin-top: 10px;
         }
-        .submit-btn:hover { background: #e6ff80; transform: scale(1.02); }
+        .submit-btn:hover { background: #e6ff80; }
     </style>
 </head>
 <body>
@@ -88,18 +88,24 @@
     </div>
 
     <div class="form-section">
-        <h2>¡ENTRENA CONMIGO!</h2>
+        <h2>¡EMPEZÁ TU CAMBIO!</h2>
         <form action="https://formspree.io/f/xeelnbyp" method="POST">
             <label>Nombre:</label>
-            <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            
+            <label>WhatsApp (con código de país):</label>
+            <input type="tel" name="whatsapp" placeholder="+54 9 11..." required>
+
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="tu@email.com" required>
             
             <label>Edad:</label>
             <input type="number" name="edad" placeholder="Tu edad" required>
             
-            <label>Objetivos:</label>
-            <textarea name="objetivos" rows="3" placeholder="Ej: Bajar de peso, ganar músculo..." required></textarea>
+            <label>¿Cuál es tu objetivo?</label>
+            <textarea name="objetivos" rows="3" placeholder="Ej: Bajar de peso, ganar fuerza..." required></textarea>
             
-            <button type="submit" class="submit-btn">Enviar Información</button>
+            <button type="submit" class="submit-btn">ENVIAR Y CONTACTAR</button>
         </form>
     </div>
 
