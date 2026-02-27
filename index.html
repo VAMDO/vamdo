@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VAMDO | Fitness</title>
+    <title>VAMDO Fitness</title>
     <style>
         body {
-            background-color: #0a0a0a;
-            color: #ffffff;
-            font-family: 'Arial Black', sans-serif;
+            background-color: #050505;
+            color: #ccff00; /* Verde neón fitness */
+            font-family: 'Impact', sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -17,58 +17,40 @@
             margin: 0;
             padding: 20px;
         }
-        .logo {
-            font-size: 3rem;
-            color: #ccff00; /* Color verde flúor fitness */
-            text-shadow: 2px 2px #333;
-            margin-bottom: 5px;
-        }
-        .subtitle {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            color: #aaa;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        .container {
-            width: 100%;
-            max-width: 400px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        .btn {
-            display: block;
-            padding: 15px;
+        .logo { font-size: 4rem; text-transform: uppercase; letter-spacing: 4px; margin-bottom: 5px; }
+        .slogan { color: #fff; font-size: 1rem; letter-spacing: 2px; margin-bottom: 30px; font-family: Arial, sans-serif; }
+        .links-container { width: 100%; max-width: 320px; display: flex; flex-direction: column; gap: 15px; }
+        .link-btn {
+            padding: 18px;
             text-align: center;
             text-decoration: none;
             color: white;
-            border-radius: 50px;
+            border-radius: 12px;
             font-weight: bold;
-            transition: transform 0.2s, background 0.2s;
-            border: 1px solid rgba(255,255,255,0.1);
+            font-family: Arial, sans-serif;
+            transition: 0.3s;
+            text-transform: uppercase;
         }
-        .btn:hover { transform: scale(1.05); }
-        
-        /* Colores de las redes */
-        .tiktok { background: #000000; border: 1px solid #ff0050; }
-        .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
-        .facebook { background: #1877F2; }
-        .youtube { background: #FF0000; }
-        .telegram { background: #0088cc; }
+        /* Estilos por red */
+        .tk { background: #000; border: 2px solid #ff0050; }
+        .ig { background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); }
+        .fb { background: #1877f2; }
+        .yt { background: #ff0000; }
+        .tg { background: #229ed9; }
+        .link-btn:hover { transform: scale(1.05); filter: brightness(1.2); }
     </style>
 </head>
 <body>
 
     <div class="logo">VAMDO</div>
-    <div class="subtitle">Fitness & Training</div>
+    <div class="slogan">POWER & TRAINING</div>
 
-    <div class="container">
-        <a href="#" class="btn tiktok">TIKTOK</a>
-        <a href="#" class="btn instagram">INSTAGRAM</a>
-        <a href="#" class="btn facebook">FACEBOOK</a>
-        <a href="#" class="btn youtube">YOUTUBE</a>
-        <a href="#" class="btn telegram">TELEGRAM</a>
+    <div class="links-container">
+        <a href="TU_LINK_DE_TIKTOK" class="link-btn tk">Tik Tok</a>
+        <a href="TU_LINK_DE_INSTAGRAM" class="link-btn ig">Instagram</a>
+        <a href="TU_LINK_DE_FACEBOOK" class="link-btn fb">Facebook</a>
+        <a href="TU_LINK_DE_YOUTUBE" class="link-btn yt">YouTube</a>
+        <a href="TU_LINK_DE_TELEGRAM" class="link-btn tg">Telegram</a>
     </div>
 
 </body>
